@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header, footer {
+            background-color: #f5f5f5;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0;
+            background-color: #e3e3e3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        article {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        figure {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        /* Centralização da imagem */
+        figure img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulário</h1>
+        </header>
+        <nav>
+            <a href="#">inicio</a>
+            <a href="#">sobre</a>
+            <a href="#">contato</a>
+        </nav>
+        <section>
+            <article>
+                <header>
+                    <h2>Preencha o formulário</h2>
+                </header>
+                <figure>
+                    
+                    
+                </figure>
+                <form>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" required>
+
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
